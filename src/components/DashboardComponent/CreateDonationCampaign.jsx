@@ -24,7 +24,7 @@ const CreateDonationCampaign = () => {
     longDescription: "",
   });
 
-  const imgbbAPI = import.meta.env.VITE_imgbb_api_key;
+  const imgbbAPI = import.meta.env.VITE_IMGBB_API_KEY;
 
   const handleChange = (e) => {
     const { name, value } = e.target;

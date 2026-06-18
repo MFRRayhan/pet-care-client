@@ -98,7 +98,7 @@ const DonationCampaigns = () => {
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_20%_30%,_var(--tw-primary)/5,_transparent_70%)] -z-0" />
       </header>
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 mt-10">
         {/* --- CAMPAIGN GRID --- */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
           <AnimatePresence>

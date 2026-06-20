@@ -7,11 +7,11 @@ import toast, { Toaster } from "react-hot-toast";
 import { FiAlertTriangle } from "react-icons/fi";
 
 const Login = () => {
-  const { signInuser, logInWithGoogle } = useContext(AuthContext);
+  const { signInUser, logInWithGoogle } = useContext(AuthContext);
   const navigate = useNavigate();
 
   // UI States
-  const [errorModal, setErrorModal] = useState(null); // { title: string, message: string }
+  const [errorModal, setErrorModal] = useState(null);
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
 
@@ -38,7 +38,7 @@ const Login = () => {
     if (!valid) return;
 
     try {
-      await signInuser(userEmail, userPassword);
+      await signInUser(userEmail, userPassword);
       toast.success("Welcome back to the Sanctuary.");
       navigate("/");
     } catch (err) {
@@ -55,7 +55,7 @@ const Login = () => {
       await logInWithGoogle();
       toast.success("Identity verified via Google.");
       navigate("/");
-    } catch (err) {
+    } catch {
       setErrorModal({
         title: "Authentication Failed",
         message:

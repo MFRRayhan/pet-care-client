@@ -27,7 +27,6 @@ import AlldonationCampaign from "@/components/DashboardComponent/AlldonationCamp
 import PrivateRoute from "./PrivateRoutes";
 import AdminRoute from "./AdminRoutes";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -74,19 +73,19 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     element: (
       <PrivateRoute>
-        <Dashboard/>
+        <Dashboard />
       </PrivateRoute>
     ),
     children: [
       {
         index: true,
-        element: <DashboardHomePage/>,
+        element: <DashboardHomePage />,
       },
       {
         path: "profile",
         element: (
           <PrivateRoute>
-            <UserProfile/>
+            <UserProfile />
           </PrivateRoute>
         ),
       },
@@ -118,7 +117,7 @@ const router = createBrowserRouter([
         path: "update-pet/:id",
         element: (
           <PrivateRoute>
-            <UpdatePet/>
+            <UpdatePet />
           </PrivateRoute>
         ),
       },
@@ -126,7 +125,7 @@ const router = createBrowserRouter([
         path: "create-donation-campaign",
         element: (
           <PrivateRoute>
-            <CreateDonationCampaign/>
+            <CreateDonationCampaign />
           </PrivateRoute>
         ),
       },
@@ -134,7 +133,7 @@ const router = createBrowserRouter([
         path: "my-donation-campaigns",
         element: (
           <PrivateRoute>
-            <MyDonationCampaigns/>
+            <MyDonationCampaigns />
           </PrivateRoute>
         ),
       },
@@ -142,7 +141,7 @@ const router = createBrowserRouter([
         path: "edit-donation/:id",
         element: (
           <PrivateRoute>
-            <EditMyDonation/>
+            <EditMyDonation />
           </PrivateRoute>
         ),
       },
@@ -150,7 +149,7 @@ const router = createBrowserRouter([
         path: "my-donations",
         element: (
           <PrivateRoute>
-            <MyDonations/>
+            <MyDonations />
           </PrivateRoute>
         ),
       },
@@ -158,7 +157,7 @@ const router = createBrowserRouter([
         path: "admin-dashboard",
         element: (
           <AdminRoute>
-            <AdminDashboard/>
+            <AdminDashboard />
           </AdminRoute>
         ),
       },
@@ -166,7 +165,7 @@ const router = createBrowserRouter([
         path: "admin/allusers",
         element: (
           <AdminRoute>
-            <UsersComponent/>
+            <UsersComponent />
           </AdminRoute>
         ),
       },
@@ -174,7 +173,7 @@ const router = createBrowserRouter([
         path: "admin/allpets",
         element: (
           <AdminRoute>
-            <AllPet/>
+            <AllPet />
           </AdminRoute>
         ),
       },
@@ -182,7 +181,7 @@ const router = createBrowserRouter([
         path: "admin/alldonation",
         element: (
           <AdminRoute>
-            <AlldonationCampaign/>
+            <AlldonationCampaign />
           </AdminRoute>
         ),
       },

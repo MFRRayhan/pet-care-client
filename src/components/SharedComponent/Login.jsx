@@ -41,7 +41,7 @@ const Login = () => {
       await signInUser(userEmail, userPassword);
       toast.success("Welcome back to the Sanctuary.");
       navigate("/");
-    } catch (err) {
+    } catch {
       setErrorModal({
         title: "Access Denied",
         message:

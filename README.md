@@ -2,7 +2,7 @@
 
 PetAdopt is a dynamic and responsive web application built with the MERN stack that connects pet lovers with animals in need of forever homes. It empowers users to browse adoptable pets, request adoptions, create donation campaigns, and contribute to causes close to their hearts. Admins manage the platform efficiently through dedicated tools and analytics, while the design ensures accessibility, responsiveness, and aesthetic appeal.
 
-<!-- TODO: Add live link -->
+👉 [Live Demo](https://paw-home-2d017.web.app/)
 
 ## 🧩 Technologies & Libraries Used
 
